@@ -1,0 +1,15 @@
+{
+  "name": "playwright-kvn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.24.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
