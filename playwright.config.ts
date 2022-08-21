@@ -3,9 +3,9 @@ import { devices } from '@playwright/test';
 require('dotenv').config();
 
 const config: PlaywrightTestConfig = {
-  testDir: './e2e',
+  testMatch: /.*.spec.ts/,
   timeout: 30 * 1000, // maximum time one test can run for
-  expect: { // 
+  expect: {
     timeout: 5000
   },
   fullyParallel: true,

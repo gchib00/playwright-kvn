@@ -11,7 +11,7 @@ const companyName: string = process.env.BASE_URL.split('.')[1]
 
 test('Visit the home-page and make a test payment on demo page', async ({ page }) => {
   await page.goto('/')
-  await expect(page).toHaveTitle(`Payments infrastructure for online & in-store sales | ${companyName}.`)  
+  await expect(page).toHaveTitle(`Payment infrastructure for online & in-store sales | ${companyName}.`)  
 
   await test.step('Ensure that the cookie banner is visible and can be closed', async () => {
     const cookieHeaderTxt = page.locator('[aria-label="Cookies & Privacy"]')

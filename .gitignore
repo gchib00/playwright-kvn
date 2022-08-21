@@ -4,3 +4,4 @@ node_modules/
 /playwright/.cache/
 /tests-examples
 .env
+k6.js

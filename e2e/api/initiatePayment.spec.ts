@@ -93,7 +93,7 @@ test.describe('Initiate payment tests', async () => {
 
   // If payment initiation is successful, the payment details should
   // be saved in the DB and can be retrieved with the payment ID
-  test.only('Successfully initiated payments are saved in DB and can be accessed with a payment ID', async ({ request }) => {
+  test('Successfully initiated payments are saved in DB and can be accessed with a payment ID', async ({ request }) => {
     const res1 = await request.post(api + '/pis/payment', { data: reqBody, headers: headers })
     const resData1: ValidPaymentRes = await res1.json()
     expect(res1.status()).toEqual(200)
